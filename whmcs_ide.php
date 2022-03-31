@@ -1,5 +1,122 @@
 <?php
 
+function checkCbinvoiceID(
+	$invoiceID
+)
+{
+}
+
+function logActivity(
+	$messageToLog,
+	$userID
+)
+{
+}
+
+function logTransaction(
+	$gateway,
+	$transactionDetail,
+	$typeStatus
+)
+{
+}
+
+function sendMessage(
+	$messageName,
+	$relid
+)
+{
+}
+
+function addInvoicePayment(
+	$invoiceID,
+	$transactionReference, 
+	$amount,
+	$fees,
+	$gateway
+)
+{
+}
+
+function createCardPayMethod(
+	$clientID,
+	$gateway,
+	$last4,
+	$expiryMMYY,
+	$cardType,
+	$cardStartDate,
+	$cardIssueNumber,
+	$token,
+	$billingContactId,
+	$description
+)
+{
+}
+
+function paymentReversed(
+	$reversalReference, 
+	$originalReference
+)
+{
+}
+
+class Memcached
+{
+	public static function get(
+		$key
+	)
+	{
+	}
+	
+	public static function set(
+		$key,
+		$data,
+		$expiry
+	)
+	{
+	}
+	
+	public static function addServer(
+		$host,
+		$port
+	)
+	{
+	}
+}
+
+namespace WHMCS\User;
+class Client
+{
+    /**
+     * @return Object
+     */
+	public static function find(
+		$clientID
+	)
+	{
+	}
+}
+
+namespace WHMCS\Billing;
+class Invoice
+{
+    /**
+     * @return Object
+     */
+	public static function find(
+		$invoiceID
+	)
+	{
+	}
+	
+	/**
+     * @return Object
+     */
+	public static function client()
+	{
+	}
+}
+
 namespace WHMCS\Module;
 class Autoloader
 {
@@ -6066,7 +6183,7 @@ class Capsule
      */
     public static function table(
         $table,
-        $connection
+        $connection = null
     )
     {
     }
@@ -6078,7 +6195,7 @@ class Capsule
      * @return \Illuminate\Database\Schema\Builder
      */
     public static function schema(
-        $connection
+        $connection = null
     )
     {
     }
