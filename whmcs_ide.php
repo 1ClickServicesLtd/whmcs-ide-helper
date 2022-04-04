@@ -1,4 +1,24 @@
 <?php
+function getGatewayVariables(
+	$gateway
+)
+{
+}
+
+function createBankPayMethod(
+	$clientID,
+	$gateway,
+	$accountType,
+	$sortCode,
+	$accountNumber,
+	$bankName,
+	$accountName,
+	$token,
+	$billingContactID,
+	$description
+)
+{
+}
 
 function checkCbinvoiceID(
 	$invoiceID
@@ -47,7 +67,7 @@ function createCardPayMethod(
 	$cardStartDate,
 	$cardIssueNumber,
 	$token,
-	$billingContactId,
+	$billingContactID,
 	$description
 )
 {

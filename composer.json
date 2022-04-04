@@ -1,5 +1,5 @@
 {
-    "name": "indicio-software/whmcs-ide-helper",
+    "name": "1clickservicesltd/whmcs-ide-helper",
     "description": "WHMCS IDE Helper",
     "type": "library",
     "license": "MIT",
@@ -7,6 +7,10 @@
         {
             "name": "Dominik Gacek",
             "email": "contact@dominikgacek.pl"
+        },
+        {
+        	"name": "Daniel McGiff",
+        	"email": "daniel.mcgiff@hooble.co.uk"
         }
     ],
     "minimum-stability": "dev",
