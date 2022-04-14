@@ -1,4 +1,11 @@
 <?php
+function callback3DSecureRedirect(
+	$invoiceID,
+	$success
+)
+{
+}
+
 function getGatewayVariables(
 	$gateway
 )
@@ -28,7 +35,7 @@ function checkCbinvoiceID(
 
 function logActivity(
 	$messageToLog,
-	$userID
+	$userID = null
 )
 {
 }
@@ -103,7 +110,24 @@ class Memcached
 	{
 	}
 }
+namespace WHMCS\CustomField;
+class CustomFieldValue
+{
 
+    /**
+     * @return Object
+     */
+    public static function where(
+      	$whereConditions
+    )
+    {
+    }
+    
+    public function save(
+    )
+    {
+    }
+}
 namespace WHMCS\User;
 class Client
 {
@@ -115,6 +139,15 @@ class Client
 	)
 	{
 	}
+	
+	/**
+     * @return Object
+     */
+    public static function where(
+      	$whereConditions
+    )
+    {
+    }
 }
 
 namespace WHMCS\Billing;
@@ -124,6 +157,15 @@ class Invoice
      * @return Object
      */
 	public static function find(
+		$invoiceID
+	)
+	{
+	}
+
+    /**
+     * @return Object
+     */
+	public static function findOrFail(
 		$invoiceID
 	)
 	{
@@ -894,6 +936,15 @@ class Application
 }
 
 namespace WHMCS;
+class CustomField
+{
+    /**
+     * @return Object
+     */
+	public static function ClientFields()
+	{
+	}
+}
 class Container
 {
 
